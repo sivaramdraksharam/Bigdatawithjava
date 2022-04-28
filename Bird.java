@@ -1,44 +1,51 @@
+package com.satyam.day31.beans;
 
 public class Bird {
-	//abstraction
-	public String birdName;
-	public String birdColor;
-	
-	public  int legs;
-	public int wings;
 
-	//encapsulation
-	private boolean singStatus;
+	private String birdName;
+	private String birdColor;
+	private  int legs;
+	private  int wings;
 	
-	
-	
-//constructor - used to initialize common values to the properties
 	public Bird() {
-		// TODO Auto-generated constructor stub
+	
 		legs=2;
 		wings=2;
+	} 
+
+	public String getBirdName() {
+		return birdName;
 	}
 
-
-
-	public boolean isSingStatus() {
-		return singStatus;
+	public void setBirdName(String birdName) {
+		this.birdName = birdName;
 	}
 
-
-
-	public void setSingStatus(boolean singStatus) {
-		this.singStatus = singStatus;
+	public String getBirdColor() {
+		return birdColor;
 	}
-	public void sing()
-	{
-		if(this.birdName.equals("Cokoo"))
-		{
-			System.out.println(this.birdName+" says..."+"la...ra...looo");
-		}else
-		{
-			System.out.println(this.birdName+"says.."+"Can not sing!!!!");
-		}
+
+	public void setBirdColor(String birdColor) {
+		this.birdColor = birdColor;
 	}
+
+	public int getLegs() {
+		return legs;
+	}
+
+	public void setLegs(int legs) {
+		this.legs = legs;
+	}
+
+	public int getWings() {
+		return wings;
+	}
+
+	public void setWings(int wings) {
+		this.wings = wings;
+	}
+
+		
+	
 
 }

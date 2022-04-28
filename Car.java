@@ -1,79 +1,33 @@
+package com.satyam.day29.inheritance;
 
 public class Car {
-	//instance variable - class variables
-	public String carNumber;
-	public String carColor;
-	private boolean keyStatus;
-	private String engine;
-	public static int wheels;
-	public int seats;
+	
+	private int wheels;
+	private String carNo;
+	private String carModel;
+	
 
-	public String getCarNumber() {
-		return carNumber;
+	//inner class - contains relationship
+	class Engine{
+			private String make;
+			private long horsePower;
+			
+			
+			
+		
 	}
-
-	public void setCarNumber(String carNumber) {
-		this.carNumber = carNumber;
-	}
-
-	public String getCarColor() {
-		return carColor;
-	}
-
-	public void setCarColor(String carColor) {
-		this.carColor = carColor;
-	}
-
-	public boolean isKeyStatus() {
-		return keyStatus;
-	}
-
-	public void setKeyStatus(boolean keyStatus) {
-		this.keyStatus = keyStatus;
-	}
-
-	public String getEngine() {
-		return engine;
-	}
-
-	public void setEngine(String engine) {
-		this.engine = engine;
-	}
-
-	public int getWheels() {
-		return wheels;
-	}
-
-	public void setWheels(int wheels) {
-		this.wheels = wheels;
-	}
-
-	public int getSeats() {
-		return seats;
-	}
-
-	public void setSeats(int seats) {
-		this.seats = seats;
-	}
-
-	//non-static method - constructor
+	
 	public Car() {
 		// TODO Auto-generated constructor stub
 	}
-
-	//static method
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 	
-	public static void start()
+	public void start()
 	{
-		System.out.println("Car starts");
+		
 	}
-	public static void stop()
+	public void stop()
 	{
-		System.out.println("Car stops!");
+		
 	}
 
 }

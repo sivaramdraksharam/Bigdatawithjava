@@ -1,3 +1,4 @@
+package com.satyam.day29.inheritance;
 
 public class Birddemo {
 
@@ -7,13 +8,18 @@ public class Birddemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Bird p=new Bird();
-		p.birdName="Parrot";
-		p.sing();
-		Bird k=new Bird();
-		k.birdName="Cokoo";
-		k.setSingStatus(true);
-		k.sing();
+		Bird b=new Bird();
+		b.fly();
+		
+		Bird p=new Bird("Parrot","Green",false);
+		
+		p.fly();
+		
+		Flight f=new Flight();
+		f.setFilghtNumber("3304");
+		f.setAirWays("Jet Airways");
+		f.fly();
+		
 	}
 
 }
